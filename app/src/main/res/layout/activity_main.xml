@@ -1,0 +1,139 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/negro">
+
+    <ImageView
+        android:id="@+id/SignUp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="60dp"
+        app:srcCompat="@drawable/wdlogo" />
+
+    <ImageView
+        android:id="@+id/SignUp2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/SignUp"
+        android:layout_marginTop="15dp"
+        android:layout_centerHorizontal="true"
+        app:srcCompat="@drawable/worldcinema" />
+
+    <EditText
+        android:id="@+id/edit_firstname"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_below="@+id/SignUp2"
+        android:layout_alignLeft="@+id/button_Register"
+        android:layout_alignRight="@+id/button_Register"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/border"
+        android:hint="Имя"
+        android:paddingStart="10dp"
+        android:textColor="#8F8F8F"
+        android:textColorHint="#808080"
+        android:textSize="14sp">
+
+        <requestFocus />
+    </EditText>
+
+    <EditText
+        android:id="@+id/edit_lastname"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_below="@+id/edit_firstname"
+        android:layout_alignLeft="@+id/button_Register"
+        android:layout_alignRight="@+id/button_Register"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/border"
+        android:hint="Фамилия"
+        android:paddingStart="10dp"
+        android:textColor="#8F8F8F"
+        android:textColorHint="#808080"
+        android:textSize="14sp">
+
+        <requestFocus />
+    </EditText>
+
+    <EditText
+        android:id="@+id/edit_email"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_below="@+id/edit_lastname"
+        android:layout_alignLeft="@+id/button_Register"
+        android:layout_alignRight="@+id/button_Register"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/border"
+        android:hint="E-mail"
+        android:paddingStart="10dp"
+        android:textColor="#8F8F8F"
+        android:textColorHint="#808080"
+        android:textSize="14sp">
+
+        <requestFocus />
+    </EditText>
+
+    <EditText
+        android:id="@+id/edit_password"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_below="@+id/edit_email"
+        android:layout_alignLeft="@+id/button_Register"
+        android:layout_alignRight="@+id/button_Register"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/border"
+        android:hint="Пароль"
+        android:inputType="textPassword"
+        android:paddingStart="10dp"
+        android:textColor="#8F8F8F"
+        android:textColorHint="#808080"
+        android:textSize="14sp" />
+
+    <EditText
+        android:id="@+id/edit_repeatpassword"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_below="@+id/edit_password"
+        android:layout_alignLeft="@+id/button_Register"
+        android:layout_alignRight="@+id/button_Register"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/border"
+        android:hint="Повторите пароль"
+        android:inputType="textPassword"
+        android:paddingStart="10dp"
+        android:textColor="#8F8F8F"
+        android:textColorHint="#808080"
+        android:textSize="14sp" />
+
+    <Button
+        android:id="@+id/button_Register"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_below="@+id/edit_repeatpassword"
+        android:layout_alignLeft="@+id/button_AlreadyHaveAccount"
+        android:layout_alignRight="@+id/button_AlreadyHaveAccount"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:backgroundTint="@color/orang"
+        android:onClick="SignUp"
+        android:text="Зарегистрироваться"
+        />
+
+    <Button
+        android:id="@+id/button_AlreadyHaveAccount"
+        android:layout_width="380dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/button_Register"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:backgroundTint="@color/negro"
+        android:onClick="GoToLogin"
+        android:text="У меня уже есть аккаунт"
+        android:textColor="@color/orang"
+        app:strokeColor="#808080"
+        app:strokeWidth="1dp" />
+</RelativeLayout>

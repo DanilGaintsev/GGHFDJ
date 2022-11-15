@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/negro">
+
+    <TextView
+        android:id="@+id/successful_login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:padding="5pt"
+        android:layout_marginTop="300dp"
+        android:text="Вы успешно залогинились!"
+        android:textColor="#FFFFFF"
+        android:textSize="12pt" />
+
+    <Button
+        android:id="@+id/button_gotoscroll"
+        android:layout_width="380dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:backgroundTint="@color/orang"
+        android:onClick="GoToScroll"
+        android:text="Посмотреть фильмы" />
+    <Button
+        android:id="@+id/button_logout"
+        android:layout_width="380dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:backgroundTint="@color/orang"
+        android:onClick="Logout"
+        android:text="Выйти" />
+</LinearLayout>
